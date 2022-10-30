@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<style>
-            #background {
+            #video {
                 position: fixed;
                 right: 0;
                 bottom: 0;
@@ -15,7 +15,7 @@
 
             function SelectVideo( path )
             {
-                let video = document.getElementById("background");
+                let video = document.getElementById("video");
                 video.src = path;
                 video.load();
                 video.play();
@@ -29,7 +29,6 @@
         </script>
 	</head>
 	<body>
-        <video id="background" autoplay loop>
-        </video>
+        <video id="video" autoplay loop></video>
     </body>
 </html>
