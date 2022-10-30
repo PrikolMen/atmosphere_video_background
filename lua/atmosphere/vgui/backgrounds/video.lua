@@ -6,7 +6,7 @@ local PANEL = {}
 
 function PANEL:Init()
     self:OpenURL( 'asset://garrysmod/html/backgrounds/video.html' )
-    self:RunJS( string_format( 'SelectVideo( \'%s\' )', 'asset://garrysmod/html/rust/' .. table_Random( file_Find( 'html/rust/*', 'GAME' ) ) ) )
+    self:RunJS( string_format( 'SelectVideo( \'%s\' )', 'asset://garrysmod/html/videos/' .. table_Random( file_Find( 'html/videos/*', 'GAME' ) ) ) )
 end
 
 vgui.Register( 'atmosphere.backgrounds.video', PANEL, 'atmosphere.html' )
