@@ -20,10 +20,12 @@
                 video.load();
                 video.play();
 
-                video.onended = function() {
-                    this.load();
-                    this.play();
+                function restartVideo(){
+                    video.currentTime = 0.1;
+                    video.play();
                 }
+
+                video.addEventListener('ended', restartVideo, false);
             }
 
         </script>
